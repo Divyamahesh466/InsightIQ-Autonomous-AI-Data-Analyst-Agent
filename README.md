@@ -1,73 +1,64 @@
-# CampusIQ-AI-College-Admission-Assistant
-An AI-powered college admission and student guidance platform using NLP, RAG and Machine Learning.
+# InsightIQ – Autonomous AI Data Analyst Agent
 
-## 📌 Project Overview
+A multi-page Python + Streamlit data analysis application.
 
-CampusIQ is a proposed AI-powered college admission and student guidance platform designed to simplify the college admission process.
+## Features
+- CSV, Excel and JSON upload
+- Data cleaning and downloadable cleaned CSV
+- Exploratory data analysis
+- Random Forest classification and regression
+- Interactive Plotly charts
+- Statistical summaries
+- Isolation Forest anomaly detection
+- Automatically generated descriptive business insights
+- Downloadable PDF report
 
-The system helps students explore courses, understand admission eligibility, access fee and scholarship information, and receive personalized academic guidance through an AI-powered chatbot.
+## Requirements
+- Python 3.10 or later
+- VS Code
 
-It aims to make admission-related information more accessible through an interactive platform with Tamil and English language support.
+## Setup on Windows
 
-## 🎯 Key Features
+1. Extract the ZIP file.
+2. Open the `InsightIQ` folder in VS Code.
+3. Open Terminal -> New Terminal.
+4. Create a virtual environment:
 
-- **AI Admission Chatbot:** Answers admission-related questions.
-- **Course Recommendation:** Suggests suitable courses based on student interests and academic background.
-- **Eligibility Checker:** Checks student eligibility using configurable admission criteria.
-- **College Information:** Provides course details, fee structures and admission procedures.
-- **Scholarship Guidance:** Helps students discover relevant scholarship opportunities.
-- **Document Checklist:** Provides admission document requirements.
-- **Bilingual Support:** Tamil and English communication.
-- **Admin Dashboard:** Supports admission data monitoring and analytics.
+   ```powershell
+   py -3.10 -m venv .venv
+   ```
 
-## 🧠 Technologies Planned
+5. Activate it:
 
-| Component | Technology |
-|---|---|
-| Programming | Python |
-| Frontend | HTML, CSS |
-| Backend | Flask |
-| Database | MySQL |
-| AI Chatbot | NLP, RAG |
-| Embeddings | Sentence Transformers |
-| Vector Database | FAISS |
-| Machine Learning | Scikit-learn |
-| LLM Integration | Gemini API |
+   ```powershell
+   .\.venv\Scripts\Activate.ps1
+   ```
 
-## 🏗️ Proposed Architecture
+   If PowerShell blocks activation, run:
 
-Student → Web Application → AI Chatbot → RAG Pipeline → College Admission Knowledge Base → Relevant Answer
+   ```powershell
+   Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+   .\.venv\Scripts\Activate.ps1
+   ```
 
-Student Details → Eligibility Checker → Course Recommendation → Admission Guidance
+6. Install dependencies:
 
-## 🌟 Project Goals
+   ```powershell
+   python -m pip install --upgrade pip
+   python -m pip install -r requirements.txt
+   ```
 
-- Simplify the college admission process.
-- Reduce confusion about admission procedures.
-- Provide accessible and reliable admission information.
-- Support personalized course guidance.
-- Improve the student admission experience.
+7. Run the application from the project root folder:
 
-## 🚀 Future Enhancements
+   ```powershell
+   python -m streamlit run app.py
+   ```
 
-- Mobile application integration.
-- Voice-based admission assistant.
-- Multi-college comparison.
-- Application status tracking.
-- Advanced admission analytics.
+8. Open the Local URL printed in the terminal, usually http://localhost:8501.
 
-## 📌 Project Status
-
-**Proposed / Planning Phase**
-
-This project is planned as an advanced academic project combining Artificial Intelligence, Natural Language Processing, Retrieval-Augmented Generation and Machine Learning.
-
-## 👩‍💻 Developer
-
-**Selvamani M**
-
-M.Sc Data Science Student
-
-## 🔖 Tags
-
-`Artificial Intelligence` `College Admission` `Python` `NLP` `RAG` `Machine Learning` `Flask` `Student Guidance`
+## Important
+- Always run Streamlit from the folder containing `app.py` and `requirements.txt`.
+- Upload the dataset on the Dashboard first. Then open any task page.
+- Predictive modeling requires a target column and enough usable rows.
+- Anomaly detection requires numeric columns and at least five rows.
+- This project uses machine learning and statistical methods; it is not an LLM-powered agent and does not make causal claims.
