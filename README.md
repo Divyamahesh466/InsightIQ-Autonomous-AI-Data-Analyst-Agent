@@ -1,18 +1,66 @@
-🎓 Introducing CampusIQ – AI-Powered College Admission Assistant!
-I'm planning to develop CampusIQ, an intelligent college admission and student guidance platform.
+# InsightIQ – Autonomous AI Data Analyst Agent
+A multi-page Python + Streamlit data analysis application.
 
-The proposed system aims to help students with:
-🔹 AI-powered admission chatbot
-🔹 Course recommendations
-🔹 Admission eligibility checking
-🔹 Fee and scholarship guidance
-🔹 Tamil & English language support
-🔹 Admission analytics dashboard
+## Features
+- CSV, Excel and JSON upload
+- Data cleaning and downloadable cleaned CSV
+- Exploratory data analysis
+- Random Forest classification and regression
+- Interactive Plotly charts
+- Statistical summaries
+- Isolation Forest anomaly detection
+- Automatically generated descriptive business insights
+- Downloadable PDF report
 
-**Planned Technologies:**
-Python | Flask | MySQL | NLP | RAG | Machine Learning | Gemini API
+## Requirements
+- Python 3.10 or later
+- VS Code
 
-My goal is to build a practical AI-powered solution that simplifies the college admission journey for students.
+## Setup on Windows
+
+1. Extract the ZIP file.
+2. Open the `InsightIQ` folder in VS Code.
+3. Open Terminal -> New Terminal.
+4. Create a virtual environment:
+
+   ```powershell
+   py -3.10 -m venv .venv
+   ```
+
+5. Activate it:
+
+   ```powershell
+   .\.venv\Scripts\Activate.ps1
+   ```
+
+   If PowerShell blocks activation, run:
+
+   ```powershell
+   Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+   .\.venv\Scripts\Activate.ps1
+   ```
+
+6. Install dependencies:
+
+   ```powershell
+   python -m pip install --upgrade pip
+   python -m pip install -r requirements.txt
+   ```
+
+7. Run the application from the project root folder:
+
+   ```powershell
+   python -m streamlit run app.py
+   ```
+
+8. Open the Local URL printed in the terminal, usually http://localhost:8501.
+
+## Important
+- Always run Streamlit from the folder containing `app.py` and `requirements.txt`.
+- Upload the dataset on the Dashboard first. Then open any task page.
+- Predictive modeling requires a target column and enough usable rows.
+- Anomaly detection requires numeric columns and at least five rows.
+- This project uses machine learning and statistical methods; it is not an LLM-powered agent and does not make causal claims.
 
 ## 🎥 Project Demo
 Watch the project demonstration here:
