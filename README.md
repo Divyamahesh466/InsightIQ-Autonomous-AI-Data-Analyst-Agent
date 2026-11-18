@@ -64,7 +64,7 @@ A multi-page Python + Streamlit data analysis application.
 
 ## 🎥 Project Demo
 Watch the project demonstration here:
-▶️ [CampusIQ Demo Video](https://drive.google.com/file/d/1_upRBAno5C_YqDEQVHIg-IschZJ_zVxo/view?usp=drive_link)
+▶️ [InsightIQ Demo Video](https://drive.google.com/file/d/1_upRBAno5C_YqDEQVHIg-IschZJ_zVxo/view?usp=drive_link)
 
 📌 Project Status: Planning Phase
 #ArtificialIntelligence #Python #MachineLearning #NLP #RAG #DataScience #CollegeAdmission #StudentGuidance
